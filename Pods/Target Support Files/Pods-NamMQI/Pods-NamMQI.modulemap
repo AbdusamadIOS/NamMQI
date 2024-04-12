@@ -1,0 +1,6 @@
+framework module Pods_NamMQI {
+  umbrella header "Pods-NamMQI-umbrella.h"
+
+  export *
+  module * { export * }
+}

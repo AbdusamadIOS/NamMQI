@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82FA136CCEC1339B5B39944 /* Pods_NamMQI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7617B874052AC5E2D6940DE0 /* Pods_NamMQI.framework */; };
 		EE1E58ED2B29EF530051DA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */; };
-		EE1E58EF2B29EF530051DA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58EE2B29EF530051DA49 /* SceneDelegate.swift */; };
-		EE1E58F12B29EF530051DA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58F02B29EF530051DA49 /* ViewController.swift */; };
-		EE1E58F42B29EF530051DA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58F22B29EF530051DA49 /* Main.storyboard */; };
 		EE1E58F72B29EF530051DA49 /* NamMQI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58F52B29EF530051DA49 /* NamMQI.xcdatamodeld */; };
 		EE1E58F92B29EF550051DA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58F82B29EF550051DA49 /* Assets.xcassets */; };
 		EE1E58FC2B29EF550051DA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58FA2B29EF550051DA49 /* LaunchScreen.storyboard */; };
+		EE1E59052B29EFA50051DA49 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */; };
+		EE1E59062B29EFA50051DA49 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */; };
+		EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E590F2B29FED20051DA49 /* MainVC.swift */; };
+		EE1E59122B29FED20051DA49 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59102B29FED20051DA49 /* MainVC.xib */; };
+		EE1E59152B2A0C360051DA49 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59132B2A0C360051DA49 /* MainCell.swift */; };
+		EE1E59162B2A0C360051DA49 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59142B2A0C360051DA49 /* MainCell.xib */; };
+		EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59172B2A0E170051DA49 /* CategoryDM.swift */; };
+		EE9BAC142B2CA97A008C4549 /* CalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */; };
+		EE9BAC152B2CA97A008C4549 /* CalculationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */; };
+		EEA4FCA62B332D3C00C3ABD3 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */; };
+		EEA4FCA72B332D3C00C3ABD3 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */; };
+		EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C94B1202037106C03A4AE0D /* Pods-NamMQI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamMQI.release.xcconfig"; path = "Target Support Files/Pods-NamMQI/Pods-NamMQI.release.xcconfig"; sourceTree = "<group>"; };
+		7617B874052AC5E2D6940DE0 /* Pods_NamMQI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamMQI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E528CE2368610E299D8676 /* Pods-NamMQI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamMQI.debug.xcconfig"; path = "Target Support Files/Pods-NamMQI/Pods-NamMQI.debug.xcconfig"; sourceTree = "<group>"; };
 		EE1E58E92B29EF530051DA49 /* NamMQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamMQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE1E58EE2B29EF530051DA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE1E58F02B29EF530051DA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE1E58F32B29EF530051DA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE1E58F62B29EF530051DA49 /* NamMQI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NamMQI.xcdatamodel; sourceTree = "<group>"; };
 		EE1E58F82B29EF550051DA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1E58FB2B29EF550051DA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1E58FD2B29EF550051DA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
+		EE1E590F2B29FED20051DA49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		EE1E59102B29FED20051DA49 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		EE1E59132B2A0C360051DA49 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		EE1E59142B2A0C360051DA49 /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		EE1E59172B2A0E170051DA49 /* CategoryDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDM.swift; sourceTree = "<group>"; };
+		EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationVC.swift; sourceTree = "<group>"; };
+		EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculationVC.xib; sourceTree = "<group>"; };
+		EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82FA136CCEC1339B5B39944 /* Pods_NamMQI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B610E864AC457BB447282A40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83E528CE2368610E299D8676 /* Pods-NamMQI.debug.xcconfig */,
+				2C94B1202037106C03A4AE0D /* Pods-NamMQI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C082B5ADE8CE37FF73F8F690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7617B874052AC5E2D6940DE0 /* Pods_NamMQI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE1E58E02B29EF530051DA49 = {
 			isa = PBXGroup;
 			children = (
 				EE1E58EB2B29EF530051DA49 /* NamMQI */,
 				EE1E58EA2B29EF530051DA49 /* Products */,
+				B610E864AC457BB447282A40 /* Pods */,
+				C082B5ADE8CE37FF73F8F690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +100,73 @@
 		EE1E58EB2B29EF530051DA49 /* NamMQI */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */,
-				EE1E58EE2B29EF530051DA49 /* SceneDelegate.swift */,
-				EE1E58F02B29EF530051DA49 /* ViewController.swift */,
-				EE1E58F22B29EF530051DA49 /* Main.storyboard */,
-				EE1E58F82B29EF550051DA49 /* Assets.xcassets */,
-				EE1E58FA2B29EF550051DA49 /* LaunchScreen.storyboard */,
-				EE1E58FD2B29EF550051DA49 /* Info.plist */,
+				EEE301A92B2DF99D00BA9042 /* Setting Folder */,
+				EEE301AA2B2DF9F400BA9042 /* Main Controllers */,
+				EEE301AE2B2DFAC000BA9042 /* Data Model File */,
 				EE1E58F52B29EF530051DA49 /* NamMQI.xcdatamodeld */,
+				EE1E58FD2B29EF550051DA49 /* Info.plist */,
 			);
 			path = NamMQI;
+			sourceTree = "<group>";
+		};
+		EEE301A92B2DF99D00BA9042 /* Setting Folder */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */,
+				EE1E58F82B29EF550051DA49 /* Assets.xcassets */,
+				EE1E58FA2B29EF550051DA49 /* LaunchScreen.storyboard */,
+			);
+			path = "Setting Folder";
+			sourceTree = "<group>";
+		};
+		EEE301AA2B2DF9F400BA9042 /* Main Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEE301AD2B2DFA9200BA9042 /* Cell file */,
+				EEE301AC2B2DFA5E00BA9042 /* xib file */,
+				EEE301AB2B2DFA2900BA9042 /* swift file */,
+			);
+			path = "Main Controllers";
+			sourceTree = "<group>";
+		};
+		EEE301AB2B2DFA2900BA9042 /* swift file */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */,
+				EE1E590F2B29FED20051DA49 /* MainVC.swift */,
+				EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */,
+			);
+			path = "swift file";
+			sourceTree = "<group>";
+		};
+		EEE301AC2B2DFA5E00BA9042 /* xib file */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */,
+				EE1E59102B29FED20051DA49 /* MainVC.xib */,
+				EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */,
+			);
+			path = "xib file";
+			sourceTree = "<group>";
+		};
+		EEE301AD2B2DFA9200BA9042 /* Cell file */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E59132B2A0C360051DA49 /* MainCell.swift */,
+				EE1E59142B2A0C360051DA49 /* MainCell.xib */,
+				EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */,
+				EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */,
+			);
+			path = "Cell file";
+			sourceTree = "<group>";
+		};
+		EEE301AE2B2DFAC000BA9042 /* Data Model File */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E59172B2A0E170051DA49 /* CategoryDM.swift */,
+				EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */,
+			);
+			path = "Data Model File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE1E59002B29EF550051DA49 /* Build configuration list for PBXNativeTarget "NamMQI" */;
 			buildPhases = (
+				20E4548F669361105889700E /* [CP] Check Pods Manifest.lock */,
 				EE1E58E52B29EF530051DA49 /* Sources */,
 				EE1E58E62B29EF530051DA49 /* Frameworks */,
 				EE1E58E72B29EF530051DA49 /* Resources */,
+				6435F71E4ED9CB1064382D69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,36 +230,79 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1E58FC2B29EF550051DA49 /* LaunchScreen.storyboard in Resources */,
+				EE1E59062B29EFA50051DA49 /* WelcomeVC.xib in Resources */,
+				EEA4FCA72B332D3C00C3ABD3 /* SideMenuCell.xib in Resources */,
+				EE9BAC152B2CA97A008C4549 /* CalculationVC.xib in Resources */,
+				EE1E59122B29FED20051DA49 /* MainVC.xib in Resources */,
 				EE1E58F92B29EF550051DA49 /* Assets.xcassets in Resources */,
-				EE1E58F42B29EF530051DA49 /* Main.storyboard in Resources */,
+				EE1E59162B2A0C360051DA49 /* MainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E4548F669361105889700E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NamMQI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6435F71E4ED9CB1064382D69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamMQI/Pods-NamMQI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamMQI/Pods-NamMQI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NamMQI/Pods-NamMQI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE1E58E52B29EF530051DA49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1E58F12B29EF530051DA49 /* ViewController.swift in Sources */,
+				EE9BAC142B2CA97A008C4549 /* CalculationVC.swift in Sources */,
+				EEA4FCA62B332D3C00C3ABD3 /* SideMenuCell.swift in Sources */,
+				EE1E59052B29EFA50051DA49 /* WelcomeVC.swift in Sources */,
+				EE1E59152B2A0C360051DA49 /* MainCell.swift in Sources */,
+				EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */,
+				EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */,
 				EE1E58ED2B29EF530051DA49 /* AppDelegate.swift in Sources */,
 				EE1E58F72B29EF530051DA49 /* NamMQI.xcdatamodeld in Sources */,
-				EE1E58EF2B29EF530051DA49 /* SceneDelegate.swift in Sources */,
+				EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE1E58F22B29EF530051DA49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE1E58F32B29EF530051DA49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE1E58FA2B29EF550051DA49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,16 +430,19 @@
 		};
 		EE1E59012B29EF550051DA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E528CE2368610E299D8676 /* Pods-NamMQI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWJG98258B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NamMaster;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,16 +460,19 @@
 		};
 		EE1E59022B29EF550051DA49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C94B1202037106C03A4AE0D /* Pods-NamMQI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWJG98258B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NamMaster;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
