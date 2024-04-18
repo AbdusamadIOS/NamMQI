@@ -11,6 +11,4 @@ import UIKit
 struct Category {
     
     var title: String
-    var image: UIImage?
-    var blur: Bool
 }

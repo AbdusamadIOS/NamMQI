@@ -13,17 +13,34 @@
 		EE1E58F92B29EF550051DA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58F82B29EF550051DA49 /* Assets.xcassets */; };
 		EE1E58FC2B29EF550051DA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58FA2B29EF550051DA49 /* LaunchScreen.storyboard */; };
 		EE1E59052B29EFA50051DA49 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */; };
-		EE1E59062B29EFA50051DA49 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */; };
 		EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E590F2B29FED20051DA49 /* MainVC.swift */; };
-		EE1E59122B29FED20051DA49 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59102B29FED20051DA49 /* MainVC.xib */; };
-		EE1E59152B2A0C360051DA49 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59132B2A0C360051DA49 /* MainCell.swift */; };
-		EE1E59162B2A0C360051DA49 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1E59142B2A0C360051DA49 /* MainCell.xib */; };
 		EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59172B2A0E170051DA49 /* CategoryDM.swift */; };
-		EE9BAC142B2CA97A008C4549 /* CalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */; };
-		EE9BAC152B2CA97A008C4549 /* CalculationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */; };
-		EEA4FCA62B332D3C00C3ABD3 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */; };
-		EEA4FCA72B332D3C00C3ABD3 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */; };
 		EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */; };
+		EED1205A2BCD6E5D00183436 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120592BCD6E5D00183436 /* SideMenuCell.swift */; };
+		EED1205E2BCD7FCE00183436 /* MainVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1205D2BCD7FCE00183436 /* MainVCCell.swift */; };
+		EED120602BCD8E4A00183436 /* PolatQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */; };
+		EED120622BCD8E7E00183436 /* PolatQuvurGazVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */; };
+		EED120642BCD8E9300183436 /* QuymaTemirQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */; };
+		EED120662BCD8EA900183436 /* AsbestSementQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */; };
+		EED120682BCD8EBA00183436 /* PlastikQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */; };
+		EED1206A2BCD8ECC00183436 /* TemirBetonQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */; };
+		EED1206C2BCD8EDC00183436 /* ShishaQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1206B2BCD8EDC00183436 /* ShishaQuvurVC.swift */; };
+		EED1206E2BCD8EEB00183436 /* MisQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1206D2BCD8EEB00183436 /* MisQuvurVC.swift */; };
+		EED120702BCD8F0F00183436 /* PolitetilenQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1206F2BCD8F0F00183436 /* PolitetilenQuvurVC.swift */; };
+		EED120722BCD8F2400183436 /* MetalPolimerQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120712BCD8F2400183436 /* MetalPolimerQuvurVC.swift */; };
+		EED323DB2BD117A300887731 /* PolatQuvurGazCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */; };
+		EED323DD2BD129E400887731 /* PolatQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DC2BD129E400887731 /* PolatQuvurCell.swift */; };
+		EED323DF2BD1328800887731 /* QuymaTemirQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */; };
+		EED323E12BD1329D00887731 /* AsbestSementQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */; };
+		EED323E32BD132BB00887731 /* PlastikQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */; };
+		EED323E52BD132CC00887731 /* TemirBetonQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */; };
+		EED323E72BD132DC00887731 /* ShishaPlastMassaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E62BD132DC00887731 /* ShishaPlastMassaCell.swift */; };
+		EED323E92BD132EE00887731 /* ShishaQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E82BD132EE00887731 /* ShishaQuvurCell.swift */; };
+		EED323EB2BD1330600887731 /* MisQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323EA2BD1330600887731 /* MisQuvurCell.swift */; };
+		EED323ED2BD1331800887731 /* PolitetilenQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323EC2BD1331800887731 /* PolitetilenQuvurCell.swift */; };
+		EED323EF2BD1332B00887731 /* MetalPolimerQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323EE2BD1332B00887731 /* MetalPolimerQuvurCell.swift */; };
+		EEDD38F82BCDA47B00906288 /* ShishaPlastmassaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD38F72BCDA47B00906288 /* ShishaPlastmassaVC.swift */; };
+		EEDF92FB2BCEBD4800EFD305 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF92FA2BCEBD4800EFD305 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,17 +54,34 @@
 		EE1E58FB2B29EF550051DA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1E58FD2B29EF550051DA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
-		EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
 		EE1E590F2B29FED20051DA49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		EE1E59102B29FED20051DA49 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
-		EE1E59132B2A0C360051DA49 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
-		EE1E59142B2A0C360051DA49 /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		EE1E59172B2A0E170051DA49 /* CategoryDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDM.swift; sourceTree = "<group>"; };
-		EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationVC.swift; sourceTree = "<group>"; };
-		EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculationVC.xib; sourceTree = "<group>"; };
-		EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
-		EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDM.swift; sourceTree = "<group>"; };
+		EED120592BCD6E5D00183436 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		EED1205D2BCD7FCE00183436 /* MainVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCell.swift; sourceTree = "<group>"; };
+		EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurVC.swift; sourceTree = "<group>"; };
+		EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurGazVC.swift; sourceTree = "<group>"; };
+		EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuymaTemirQuvurVC.swift; sourceTree = "<group>"; };
+		EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsbestSementQuvurVC.swift; sourceTree = "<group>"; };
+		EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlastikQuvurVC.swift; sourceTree = "<group>"; };
+		EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemirBetonQuvurVC.swift; sourceTree = "<group>"; };
+		EED1206B2BCD8EDC00183436 /* ShishaQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaQuvurVC.swift; sourceTree = "<group>"; };
+		EED1206D2BCD8EEB00183436 /* MisQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisQuvurVC.swift; sourceTree = "<group>"; };
+		EED1206F2BCD8F0F00183436 /* PolitetilenQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolitetilenQuvurVC.swift; sourceTree = "<group>"; };
+		EED120712BCD8F2400183436 /* MetalPolimerQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPolimerQuvurVC.swift; sourceTree = "<group>"; };
+		EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurGazCell.swift; sourceTree = "<group>"; };
+		EED323DC2BD129E400887731 /* PolatQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurCell.swift; sourceTree = "<group>"; };
+		EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuymaTemirQuvurCell.swift; sourceTree = "<group>"; };
+		EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsbestSementQuvurCell.swift; sourceTree = "<group>"; };
+		EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlastikQuvurCell.swift; sourceTree = "<group>"; };
+		EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemirBetonQuvurCell.swift; sourceTree = "<group>"; };
+		EED323E62BD132DC00887731 /* ShishaPlastMassaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaPlastMassaCell.swift; sourceTree = "<group>"; };
+		EED323E82BD132EE00887731 /* ShishaQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaQuvurCell.swift; sourceTree = "<group>"; };
+		EED323EA2BD1330600887731 /* MisQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisQuvurCell.swift; sourceTree = "<group>"; };
+		EED323EC2BD1331800887731 /* PolitetilenQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolitetilenQuvurCell.swift; sourceTree = "<group>"; };
+		EED323EE2BD1332B00887731 /* MetalPolimerQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPolimerQuvurCell.swift; sourceTree = "<group>"; };
+		EEDD38F72BCDA47B00906288 /* ShishaPlastmassaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaPlastmassaVC.swift; sourceTree = "<group>"; };
+		EEDF92FA2BCEBD4800EFD305 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +136,46 @@
 			children = (
 				EEE301A92B2DF99D00BA9042 /* Setting Folder */,
 				EEE301AA2B2DF9F400BA9042 /* Main Controllers */,
+				EEE301AD2B2DFA9200BA9042 /* Cell file */,
 				EEE301AE2B2DFAC000BA9042 /* Data Model File */,
 				EE1E58F52B29EF530051DA49 /* NamMQI.xcdatamodeld */,
 				EE1E58FD2B29EF550051DA49 /* Info.plist */,
 			);
 			path = NamMQI;
+			sourceTree = "<group>";
+		};
+		EED323F02BD1333A00887731 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF92FA2BCEBD4800EFD305 /* UIView.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		EED323F12BD1335300887731 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */,
+				EED323DC2BD129E400887731 /* PolatQuvurCell.swift */,
+				EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */,
+				EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */,
+				EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */,
+				EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */,
+				EED323E62BD132DC00887731 /* ShishaPlastMassaCell.swift */,
+				EED323E82BD132EE00887731 /* ShishaQuvurCell.swift */,
+				EED323EA2BD1330600887731 /* MisQuvurCell.swift */,
+				EED323EC2BD1331800887731 /* PolitetilenQuvurCell.swift */,
+				EED323EE2BD1332B00887731 /* MetalPolimerQuvurCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EED323F22BD1339800887731 /* WelcomVC */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */,
+			);
+			name = WelcomVC;
 			sourceTree = "<group>";
 		};
 		EEE301A92B2DF99D00BA9042 /* Setting Folder */ = {
@@ -122,40 +191,38 @@
 		EEE301AA2B2DF9F400BA9042 /* Main Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EEE301AD2B2DFA9200BA9042 /* Cell file */,
-				EEE301AC2B2DFA5E00BA9042 /* xib file */,
-				EEE301AB2B2DFA2900BA9042 /* swift file */,
+				EED323F02BD1333A00887731 /* Extension */,
+				EED323F12BD1335300887731 /* Cells */,
+				EED323F22BD1339800887731 /* WelcomVC */,
+				EEE301AB2B2DFA2900BA9042 /* Views */,
 			);
 			path = "Main Controllers";
 			sourceTree = "<group>";
 		};
-		EEE301AB2B2DFA2900BA9042 /* swift file */ = {
+		EEE301AB2B2DFA2900BA9042 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */,
 				EE1E590F2B29FED20051DA49 /* MainVC.swift */,
-				EE9BAC122B2CA97A008C4549 /* CalculationVC.swift */,
+				EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */,
+				EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */,
+				EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */,
+				EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */,
+				EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */,
+				EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */,
+				EEDD38F72BCDA47B00906288 /* ShishaPlastmassaVC.swift */,
+				EED1206B2BCD8EDC00183436 /* ShishaQuvurVC.swift */,
+				EED1206D2BCD8EEB00183436 /* MisQuvurVC.swift */,
+				EED1206F2BCD8F0F00183436 /* PolitetilenQuvurVC.swift */,
+				EED120712BCD8F2400183436 /* MetalPolimerQuvurVC.swift */,
 			);
-			path = "swift file";
-			sourceTree = "<group>";
-		};
-		EEE301AC2B2DFA5E00BA9042 /* xib file */ = {
-			isa = PBXGroup;
-			children = (
-				EE1E59042B29EFA50051DA49 /* WelcomeVC.xib */,
-				EE1E59102B29FED20051DA49 /* MainVC.xib */,
-				EE9BAC132B2CA97A008C4549 /* CalculationVC.xib */,
-			);
-			path = "xib file";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EEE301AD2B2DFA9200BA9042 /* Cell file */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E59132B2A0C360051DA49 /* MainCell.swift */,
-				EE1E59142B2A0C360051DA49 /* MainCell.xib */,
-				EEA4FCA42B332D3C00C3ABD3 /* SideMenuCell.swift */,
-				EEA4FCA52B332D3C00C3ABD3 /* SideMenuCell.xib */,
+				EED120592BCD6E5D00183436 /* SideMenuCell.swift */,
+				EED1205D2BCD7FCE00183436 /* MainVCCell.swift */,
 			);
 			path = "Cell file";
 			sourceTree = "<group>";
@@ -230,12 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1E58FC2B29EF550051DA49 /* LaunchScreen.storyboard in Resources */,
-				EE1E59062B29EFA50051DA49 /* WelcomeVC.xib in Resources */,
-				EEA4FCA72B332D3C00C3ABD3 /* SideMenuCell.xib in Resources */,
-				EE9BAC152B2CA97A008C4549 /* CalculationVC.xib in Resources */,
-				EE1E59122B29FED20051DA49 /* MainVC.xib in Resources */,
 				EE1E58F92B29EF550051DA49 /* Assets.xcassets in Resources */,
-				EE1E59162B2A0C360051DA49 /* MainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,15 +350,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9BAC142B2CA97A008C4549 /* CalculationVC.swift in Sources */,
-				EEA4FCA62B332D3C00C3ABD3 /* SideMenuCell.swift in Sources */,
+				EED323E32BD132BB00887731 /* PlastikQuvurCell.swift in Sources */,
+				EEDF92FB2BCEBD4800EFD305 /* UIView.swift in Sources */,
+				EED323DF2BD1328800887731 /* QuymaTemirQuvurCell.swift in Sources */,
+				EED1206E2BCD8EEB00183436 /* MisQuvurVC.swift in Sources */,
+				EED323EF2BD1332B00887731 /* MetalPolimerQuvurCell.swift in Sources */,
+				EED323E52BD132CC00887731 /* TemirBetonQuvurCell.swift in Sources */,
 				EE1E59052B29EFA50051DA49 /* WelcomeVC.swift in Sources */,
-				EE1E59152B2A0C360051DA49 /* MainCell.swift in Sources */,
+				EED1205E2BCD7FCE00183436 /* MainVCCell.swift in Sources */,
+				EED323EB2BD1330600887731 /* MisQuvurCell.swift in Sources */,
+				EED1205A2BCD6E5D00183436 /* SideMenuCell.swift in Sources */,
+				EED120602BCD8E4A00183436 /* PolatQuvurVC.swift in Sources */,
+				EED120722BCD8F2400183436 /* MetalPolimerQuvurVC.swift in Sources */,
+				EED120682BCD8EBA00183436 /* PlastikQuvurVC.swift in Sources */,
+				EED323E92BD132EE00887731 /* ShishaQuvurCell.swift in Sources */,
+				EED323E72BD132DC00887731 /* ShishaPlastMassaCell.swift in Sources */,
 				EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */,
+				EED1206C2BCD8EDC00183436 /* ShishaQuvurVC.swift in Sources */,
+				EED120702BCD8F0F00183436 /* PolitetilenQuvurVC.swift in Sources */,
 				EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */,
+				EED1206A2BCD8ECC00183436 /* TemirBetonQuvurVC.swift in Sources */,
+				EED120662BCD8EA900183436 /* AsbestSementQuvurVC.swift in Sources */,
+				EED323DD2BD129E400887731 /* PolatQuvurCell.swift in Sources */,
 				EE1E58ED2B29EF530051DA49 /* AppDelegate.swift in Sources */,
 				EE1E58F72B29EF530051DA49 /* NamMQI.xcdatamodeld in Sources */,
+				EED323DB2BD117A300887731 /* PolatQuvurGazCell.swift in Sources */,
+				EED120622BCD8E7E00183436 /* PolatQuvurGazVC.swift in Sources */,
+				EEDD38F82BCDA47B00906288 /* ShishaPlastmassaVC.swift in Sources */,
+				EED120642BCD8E9300183436 /* QuymaTemirQuvurVC.swift in Sources */,
+				EED323ED2BD1331800887731 /* PolitetilenQuvurCell.swift in Sources */,
 				EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */,
+				EED323E12BD1329D00887731 /* AsbestSementQuvurCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ var window: UIWindow?
       
         window = UIWindow()
         
-        let vc = WelcomeVC(nibName: "WelcomeVC", bundle: nil)
+        let vc = WelcomeVC()
         let nav = UINavigationController(rootViewController: vc)
         
         window?.rootViewController = nav
