@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C82FA136CCEC1339B5B39944 /* Pods_NamMQI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7617B874052AC5E2D6940DE0 /* Pods_NamMQI.framework */; };
+		EE0E19DD2BDA3DA900C04EAA /* Chugun.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19DC2BDA3DA900C04EAA /* Chugun.swift */; };
+		EE0E19DF2BDA507800C04EAA /* AsbestSementQuvur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19DE2BDA507800C04EAA /* AsbestSementQuvur.swift */; };
+		EE0E19E12BDA540E00C04EAA /* PlastikQuvur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19E02BDA540E00C04EAA /* PlastikQuvur.swift */; };
+		EE0E19E32BDA8DA000C04EAA /* TemirBetonQuvur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19E22BDA8DA000C04EAA /* TemirBetonQuvur.swift */; };
+		EE0E19E52BDA937C00C04EAA /* ShishaQuvur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19E42BDA937C00C04EAA /* ShishaQuvur.swift */; };
+		EE0E19E72BDA939500C04EAA /* ShishaPlastMassa.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E19E62BDA939500C04EAA /* ShishaPlastMassa.swift */; };
+		EE117C9C2BD41735006BBB9D /* PolatQuvur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE117C9B2BD41735006BBB9D /* PolatQuvur.swift */; };
 		EE1E58ED2B29EF530051DA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */; };
 		EE1E58F72B29EF530051DA49 /* NamMQI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE1E58F52B29EF530051DA49 /* NamMQI.xcdatamodeld */; };
 		EE1E58F92B29EF550051DA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1E58F82B29EF550051DA49 /* Assets.xcassets */; };
@@ -20,7 +27,7 @@
 		EED1205E2BCD7FCE00183436 /* MainVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1205D2BCD7FCE00183436 /* MainVCCell.swift */; };
 		EED120602BCD8E4A00183436 /* PolatQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */; };
 		EED120622BCD8E7E00183436 /* PolatQuvurGazVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */; };
-		EED120642BCD8E9300183436 /* QuymaTemirQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */; };
+		EED120642BCD8E9300183436 /* ChugunQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120632BCD8E9300183436 /* ChugunQuvurVC.swift */; };
 		EED120662BCD8EA900183436 /* AsbestSementQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */; };
 		EED120682BCD8EBA00183436 /* PlastikQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */; };
 		EED1206A2BCD8ECC00183436 /* TemirBetonQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */; };
@@ -30,7 +37,7 @@
 		EED120722BCD8F2400183436 /* MetalPolimerQuvurVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120712BCD8F2400183436 /* MetalPolimerQuvurVC.swift */; };
 		EED323DB2BD117A300887731 /* PolatQuvurGazCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */; };
 		EED323DD2BD129E400887731 /* PolatQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DC2BD129E400887731 /* PolatQuvurCell.swift */; };
-		EED323DF2BD1328800887731 /* QuymaTemirQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */; };
+		EED323DF2BD1328800887731 /* ChugunCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323DE2BD1328800887731 /* ChugunCell.swift */; };
 		EED323E12BD1329D00887731 /* AsbestSementQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */; };
 		EED323E32BD132BB00887731 /* PlastikQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */; };
 		EED323E52BD132CC00887731 /* TemirBetonQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */; };
@@ -41,12 +48,20 @@
 		EED323EF2BD1332B00887731 /* MetalPolimerQuvurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323EE2BD1332B00887731 /* MetalPolimerQuvurCell.swift */; };
 		EEDD38F82BCDA47B00906288 /* ShishaPlastmassaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD38F72BCDA47B00906288 /* ShishaPlastmassaVC.swift */; };
 		EEDF92FB2BCEBD4800EFD305 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF92FA2BCEBD4800EFD305 /* UIView.swift */; };
+		EEF5171B2BD2A700000D756A /* PolatQuvurGaz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5171A2BD2A700000D756A /* PolatQuvurGaz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C94B1202037106C03A4AE0D /* Pods-NamMQI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamMQI.release.xcconfig"; path = "Target Support Files/Pods-NamMQI/Pods-NamMQI.release.xcconfig"; sourceTree = "<group>"; };
 		7617B874052AC5E2D6940DE0 /* Pods_NamMQI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamMQI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E528CE2368610E299D8676 /* Pods-NamMQI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamMQI.debug.xcconfig"; path = "Target Support Files/Pods-NamMQI/Pods-NamMQI.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0E19DC2BDA3DA900C04EAA /* Chugun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chugun.swift; sourceTree = "<group>"; };
+		EE0E19DE2BDA507800C04EAA /* AsbestSementQuvur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsbestSementQuvur.swift; sourceTree = "<group>"; };
+		EE0E19E02BDA540E00C04EAA /* PlastikQuvur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlastikQuvur.swift; sourceTree = "<group>"; };
+		EE0E19E22BDA8DA000C04EAA /* TemirBetonQuvur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemirBetonQuvur.swift; sourceTree = "<group>"; };
+		EE0E19E42BDA937C00C04EAA /* ShishaQuvur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaQuvur.swift; sourceTree = "<group>"; };
+		EE0E19E62BDA939500C04EAA /* ShishaPlastMassa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaPlastMassa.swift; sourceTree = "<group>"; };
+		EE117C9B2BD41735006BBB9D /* PolatQuvur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvur.swift; sourceTree = "<group>"; };
 		EE1E58E92B29EF530051DA49 /* NamMQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamMQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1E58EC2B29EF530051DA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE1E58F62B29EF530051DA49 /* NamMQI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NamMQI.xcdatamodel; sourceTree = "<group>"; };
@@ -61,7 +76,7 @@
 		EED1205D2BCD7FCE00183436 /* MainVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCell.swift; sourceTree = "<group>"; };
 		EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurVC.swift; sourceTree = "<group>"; };
 		EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurGazVC.swift; sourceTree = "<group>"; };
-		EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuymaTemirQuvurVC.swift; sourceTree = "<group>"; };
+		EED120632BCD8E9300183436 /* ChugunQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChugunQuvurVC.swift; sourceTree = "<group>"; };
 		EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsbestSementQuvurVC.swift; sourceTree = "<group>"; };
 		EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlastikQuvurVC.swift; sourceTree = "<group>"; };
 		EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemirBetonQuvurVC.swift; sourceTree = "<group>"; };
@@ -71,7 +86,7 @@
 		EED120712BCD8F2400183436 /* MetalPolimerQuvurVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPolimerQuvurVC.swift; sourceTree = "<group>"; };
 		EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurGazCell.swift; sourceTree = "<group>"; };
 		EED323DC2BD129E400887731 /* PolatQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurCell.swift; sourceTree = "<group>"; };
-		EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuymaTemirQuvurCell.swift; sourceTree = "<group>"; };
+		EED323DE2BD1328800887731 /* ChugunCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChugunCell.swift; sourceTree = "<group>"; };
 		EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsbestSementQuvurCell.swift; sourceTree = "<group>"; };
 		EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlastikQuvurCell.swift; sourceTree = "<group>"; };
 		EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemirBetonQuvurCell.swift; sourceTree = "<group>"; };
@@ -82,6 +97,7 @@
 		EED323EE2BD1332B00887731 /* MetalPolimerQuvurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPolimerQuvurCell.swift; sourceTree = "<group>"; };
 		EEDD38F72BCDA47B00906288 /* ShishaPlastmassaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishaPlastmassaVC.swift; sourceTree = "<group>"; };
 		EEDF92FA2BCEBD4800EFD305 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		EEF5171A2BD2A700000D756A /* PolatQuvurGaz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolatQuvurGaz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				EEDF92FA2BCEBD4800EFD305 /* UIView.swift */,
+				EEF5171A2BD2A700000D756A /* PolatQuvurGaz.swift */,
+				EE117C9B2BD41735006BBB9D /* PolatQuvur.swift */,
+				EE0E19DC2BDA3DA900C04EAA /* Chugun.swift */,
+				EE0E19DE2BDA507800C04EAA /* AsbestSementQuvur.swift */,
+				EE0E19E02BDA540E00C04EAA /* PlastikQuvur.swift */,
+				EE0E19E22BDA8DA000C04EAA /* TemirBetonQuvur.swift */,
+				EE0E19E62BDA939500C04EAA /* ShishaPlastMassa.swift */,
+				EE0E19E42BDA937C00C04EAA /* ShishaQuvur.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -157,7 +181,7 @@
 			children = (
 				EED323DA2BD117A300887731 /* PolatQuvurGazCell.swift */,
 				EED323DC2BD129E400887731 /* PolatQuvurCell.swift */,
-				EED323DE2BD1328800887731 /* QuymaTemirQuvurCell.swift */,
+				EED323DE2BD1328800887731 /* ChugunCell.swift */,
 				EED323E02BD1329D00887731 /* AsbestSementQuvurCell.swift */,
 				EED323E22BD132BB00887731 /* PlastikQuvurCell.swift */,
 				EED323E42BD132CC00887731 /* TemirBetonQuvurCell.swift */,
@@ -205,7 +229,7 @@
 				EE1E590F2B29FED20051DA49 /* MainVC.swift */,
 				EED120612BCD8E7E00183436 /* PolatQuvurGazVC.swift */,
 				EED1205F2BCD8E4A00183436 /* PolatQuvurVC.swift */,
-				EED120632BCD8E9300183436 /* QuymaTemirQuvurVC.swift */,
+				EED120632BCD8E9300183436 /* ChugunQuvurVC.swift */,
 				EED120652BCD8EA900183436 /* AsbestSementQuvurVC.swift */,
 				EED120672BCD8EBA00183436 /* PlastikQuvurVC.swift */,
 				EED120692BCD8ECC00183436 /* TemirBetonQuvurVC.swift */,
@@ -350,9 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0E19E12BDA540E00C04EAA /* PlastikQuvur.swift in Sources */,
 				EED323E32BD132BB00887731 /* PlastikQuvurCell.swift in Sources */,
 				EEDF92FB2BCEBD4800EFD305 /* UIView.swift in Sources */,
-				EED323DF2BD1328800887731 /* QuymaTemirQuvurCell.swift in Sources */,
+				EED323DF2BD1328800887731 /* ChugunCell.swift in Sources */,
 				EED1206E2BCD8EEB00183436 /* MisQuvurVC.swift in Sources */,
 				EED323EF2BD1332B00887731 /* MetalPolimerQuvurCell.swift in Sources */,
 				EED323E52BD132CC00887731 /* TemirBetonQuvurCell.swift in Sources */,
@@ -362,13 +387,18 @@
 				EED1205A2BCD6E5D00183436 /* SideMenuCell.swift in Sources */,
 				EED120602BCD8E4A00183436 /* PolatQuvurVC.swift in Sources */,
 				EED120722BCD8F2400183436 /* MetalPolimerQuvurVC.swift in Sources */,
+				EE0E19E72BDA939500C04EAA /* ShishaPlastMassa.swift in Sources */,
 				EED120682BCD8EBA00183436 /* PlastikQuvurVC.swift in Sources */,
 				EED323E92BD132EE00887731 /* ShishaQuvurCell.swift in Sources */,
+				EE0E19E32BDA8DA000C04EAA /* TemirBetonQuvur.swift in Sources */,
 				EED323E72BD132DC00887731 /* ShishaPlastMassaCell.swift in Sources */,
+				EE117C9C2BD41735006BBB9D /* PolatQuvur.swift in Sources */,
 				EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */,
 				EED1206C2BCD8EDC00183436 /* ShishaQuvurVC.swift in Sources */,
 				EED120702BCD8F0F00183436 /* PolitetilenQuvurVC.swift in Sources */,
+				EE0E19E52BDA937C00C04EAA /* ShishaQuvur.swift in Sources */,
 				EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */,
+				EEF5171B2BD2A700000D756A /* PolatQuvurGaz.swift in Sources */,
 				EED1206A2BCD8ECC00183436 /* TemirBetonQuvurVC.swift in Sources */,
 				EED120662BCD8EA900183436 /* AsbestSementQuvurVC.swift in Sources */,
 				EED323DD2BD129E400887731 /* PolatQuvurCell.swift in Sources */,
@@ -377,7 +407,9 @@
 				EED323DB2BD117A300887731 /* PolatQuvurGazCell.swift in Sources */,
 				EED120622BCD8E7E00183436 /* PolatQuvurGazVC.swift in Sources */,
 				EEDD38F82BCDA47B00906288 /* ShishaPlastmassaVC.swift in Sources */,
-				EED120642BCD8E9300183436 /* QuymaTemirQuvurVC.swift in Sources */,
+				EE0E19DD2BDA3DA900C04EAA /* Chugun.swift in Sources */,
+				EED120642BCD8E9300183436 /* ChugunQuvurVC.swift in Sources */,
+				EE0E19DF2BDA507800C04EAA /* AsbestSementQuvur.swift in Sources */,
 				EED323ED2BD1331800887731 /* PolitetilenQuvurCell.swift in Sources */,
 				EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */,
 				EED323E12BD1329D00887731 /* AsbestSementQuvurCell.swift in Sources */,

@@ -11,30 +11,27 @@ import SafariServices
 class MainVC: UIViewController {
     
     let contaneirView =  UIView()
+    let logoLabel = UILabel()
     var collection: UICollectionView!
     let tableView = UITableView()
     
-    var categories: [Category] = [Category(title: "Po'lat quvurlar (Gaz)"),
-                                  Category(title: "Po'lat quvurlar"),
-                                  Category(title: "Quyma temir quvurlar"),
-                                  Category(title: "Asbest - sement quvurlar"),
-                                  Category(title: "Plastik quvurlar"),
-                                  Category(title: "Temir - beton quvurlar"),
-                                  Category(title: "Shisha - plastmassa quvurlar"),
-                                  Category(title: "Shisha quvurlar"),
-                                  Category(title: "Mis quvurlar"),
-                                  Category(title: "Politetilen quvurlar"),
-                                  Category(title: "Metal - polimer quvurlar")
+    var categories: [Category] = [Category(image: UIImage(named: "gaz"), title: "Po'lat quvurlar (Gaz)"),
+                                  Category(image: UIImage(named: "polat"), title: "Po'lat quvurlar"),
+                                  Category(image: UIImage(named: "chugun"), title: "Chugun quvurlar"),
+                                  Category(image: UIImage(named: "asbest"), title: "Asbest - sement quvurlar"),
+                                  Category(image: UIImage(named: "plastik"), title: "Plastik quvurlar"),
+                                  Category(image: UIImage(named: "beton" ), title: "Temir - beton quvurlar"),
+                                  Category(image: UIImage(named: "shishaplastik"), title: "Shisha - plastmassa quvurlar"),
+                                  Category(image: UIImage(named: "shisha"), title: "Shisha quvurlar"),
+                                  Category(image: UIImage(named: "mis"), title: "Mis quvurlar"),
+                                  Category(image: UIImage(named: "politelin"), title: "Politetilen quvurlar"),
+                                  Category(image: UIImage(named: "metalPolimer"), title: "Metal - polimer quvurlar")
     ]
     
     var sideMenues: [SideMenu] = [
         SideMenu(
             title: "Elektron kitoblar",
-            image: UIImage(systemName: "text.book.closed.fill")),
-        SideMenu(
-            title: "Dasturdan chiqish",
-            image:UIImage(systemName:"rectangle.portrait.and.arrow.forward.fill")),
-    ]
+            image: UIImage(systemName: "text.book.closed.fill"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,21 +68,27 @@ class MainVC: UIViewController {
         if contaneirView.isHidden == true {
             contaneirView.isHidden = false
             tableView.isHidden = false
+            logoLabel.isHidden = false
             self.contaneirView.frame = CGRect(x: 0, y: 0, width: 0, height: Int(self.view.frame.height))
             self.tableView.frame = CGRect(x: 0, y: 0, width: 0, height: Int(self.view.frame.height))
+            self.logoLabel.frame = CGRect(x: 0, y: 0, width: 0, height: 40)
             UIView.animate(withDuration: 0.4) {
                 self.contaneirView.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: Int(self.view.frame.height))
                 self.tableView.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: Int(self.view.frame.height))
+                self.logoLabel.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: 40)
             }
         } else {
             
             contaneirView.isHidden = true
             tableView.isHidden = true
+            logoLabel.isHidden = true
             self.contaneirView.frame = CGRect(x: 0, y: 0, width: 0, height: Int(self.view.frame.height))
             self.tableView.frame = CGRect(x: 0, y: 0, width: 0, height: Int(self.view.frame.height))
+            self.logoLabel.frame = CGRect(x: 0, y: 0, width: 0, height: 40)
             UIView.animate(withDuration: 1) {
                 self.contaneirView.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: Int(self.view.frame.height))
                 self.tableView.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: Int(self.view.frame.height))
+                self.logoLabel.frame = CGRect(x: 0, y: 0, width: (Int(self.view.frame.width) / 2), height: 40)
             }
         }
     }
@@ -111,6 +114,7 @@ class MainVC: UIViewController {
         
         contaneirView.isHidden = true
         tableView.isHidden = true
+        logoLabel.isHidden = true
         contaneirView.translatesAutoresizingMaskIntoConstraints = false
         contaneirView.backgroundColor = .systemGray6
         
@@ -119,11 +123,18 @@ class MainVC: UIViewController {
         
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.backgroundColor = .systemGray6
+        
+        logoLabel.translatesAutoresizingMaskIntoConstraints = false
+        logoLabel.text = "iDevFan"
+        logoLabel.textColor = .label
+        logoLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        logoLabel.textAlignment = .center
     }
     
     func layout() {
         view.addSubview(collection)
         view.addSubview(contaneirView)
+        view.addSubview(logoLabel)
         contaneirView.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -137,6 +148,11 @@ class MainVC: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: contaneirView.bottomAnchor, constant: 0),
             tableView.leftAnchor.constraint(equalTo: contaneirView.leftAnchor, constant: 0),
             tableView.rightAnchor.constraint(equalTo: contaneirView.rightAnchor, constant: 0),
+            
+            logoLabel.heightAnchor.constraint(equalToConstant: 40),
+            logoLabel.leftAnchor.constraint(equalTo: tableView.leftAnchor, constant: 10),
+            logoLabel.rightAnchor.constraint(equalTo: tableView.rightAnchor, constant: -10),
+            logoLabel.bottomAnchor.constraint(equalTo: tableView.bottomAnchor, constant: -25),
             
             collection.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
             collection.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
@@ -212,6 +228,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainVCCell.identifeir, for: indexPath) as? MainVCCell else { return UICollectionViewCell() }
         
+        cell.img.image = categories[indexPath.item].image
         cell.title.text = categories[indexPath.item].title
         return cell
     }
@@ -228,7 +245,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             vc1.categories = categories[indexPath.item]
             navigationController?.pushViewController(vc1, animated: true)
         case 2:
-            let vc2 = QuymaTemirQuvurVC()
+            let vc2 = ChugunQuvurVC()
             vc2.categories = categories[indexPath.item]
             navigationController?.pushViewController(vc2, animated: true)
         case 3:
@@ -268,6 +285,6 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: (collectionView.frame.width - 45) / 2, height: 90)
+        return CGSize(width: (collectionView.frame.width - 45) / 2, height: 170)
     }
 }

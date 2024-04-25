@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuymaTemirQuvurVC: UIViewController {
+class ChugunQuvurVC: UIViewController {
     
     let tableView = UITableView()
     var categories: Category?
@@ -25,7 +25,7 @@ class QuymaTemirQuvurVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.register(QuymaTemirQuvurCell.self, forCellReuseIdentifier: QuymaTemirQuvurCell.identifeir)
+        tableView.register(ChugunCell.self, forCellReuseIdentifier: ChugunCell.identifeir)
     }
     func layout() {
         view.addSubviews(tableView)
@@ -37,13 +37,13 @@ class QuymaTemirQuvurVC: UIViewController {
     }
 }
 
-extension QuymaTemirQuvurVC: UITableViewDelegate, UITableViewDataSource {
+extension ChugunQuvurVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: QuymaTemirQuvurCell.identifeir, for: indexPath) as? QuymaTemirQuvurCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChugunCell.identifeir, for: indexPath) as? ChugunCell else { return UITableViewCell() }
         
         return cell
     }

@@ -24,16 +24,24 @@ class PolatQuvurGazCell: UITableViewCell {
     let tizimTanlash = UILabel()
     let sovuqSuvButton = UIButton()
     let issiqSuvButton = UIButton()
+    let issiqSuvTF = UITextField()
     let qSarf = UILabel()
     let lSekund = UIButton()
     let mKub = UIButton()
     let kesimUzunligi = UILabel()
     let kesimUzunligiTF = UITextField()
-    let mahalliyQarshiliklarLabel = UILabel()
-    let mahalliyQarshiliklarButton = UIButton()
-    let qarshiliklarTF = UITextField()
     let natijaLabel = UILabel()
     let hisoblashButton = UIButton()
+    
+    let tashqiDiametrPicker = UIPickerView()
+    let devorQalinligiPicker = UIPickerView()
+    let gradusPicker = UIPickerView()
+    let mahaliyQarshilikTufayliPicker = UIPickerView()
+    
+    var tashqiDiametr = ["10.2", "13.5", "17.0", "21.3", "26.8", "33.5", "42.3", "48", "60", "75.5", "88.5", "101.3", "114", "140", "165"]
+    var devorNol = ["1.8", "2", "2.2", "2.35", "2.5", "2.8", "3", "3.2", "3.5", "4", "4.5", "5", "5.5"]
+    var gradus = ["40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95"]
+    var mahaliyQarshilikTufayli = [" Turar joy va jamoat binolarini maishiy va ichimlik suvi bilan ta'minlash", "Kombinatsiyalangan kommunal va yong'inga qarshi himoya va umumiy binolar", "Sanoat integratsiyalashgan sanoat yong'inga qarshi suv ta'minoti", "Yong'inga qarshi suv ta'minoti" ]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,6 +51,7 @@ class PolatQuvurGazCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         style()
         layout()
+        setupPikker()
     }
     
     func style() {
@@ -56,11 +65,13 @@ class PolatQuvurGazCell: UITableViewCell {
         yangiQuvurButton.setTitleColor(.systemBlue, for: .normal)
         yangiQuvurButton.backgroundColor = .white
         yangiQuvurButton.layer.cornerRadius = 5
+        yangiQuvurButton.addTarget(self, action: #selector(yangiQuvurButtonTap), for: .touchUpInside)
         
         eskiQuvurButton.setTitle("Eski quvur", for: .normal)
         eskiQuvurButton.setTitleColor(.systemBlue, for: .normal)
         eskiQuvurButton.backgroundColor = .white
         eskiQuvurButton.layer.cornerRadius = 5
+        eskiQuvurButton.addTarget(self, action: #selector(eskiQuvurButtonTap), for: .touchUpInside)
         
         tashqiDiametriLabel.text = "Quvur tashqi diametri"
         tashqiDiametriLabel.textColor = .label
@@ -70,6 +81,7 @@ class PolatQuvurGazCell: UITableViewCell {
         tashqiDiametrTF.layer.cornerRadius = 5
         tashqiDiametrTF.backgroundColor = .white
         tashqiDiametrTF.borderStyle = .roundedRect
+        tashqiDiametrTF.textColor = .black
         
         devorQalinligi.text = "Devor qalinligi S"
         devorQalinligi.textColor = .label
@@ -79,9 +91,13 @@ class PolatQuvurGazCell: UITableViewCell {
         devorQalinligiTF.layer.cornerRadius = 5
         devorQalinligiTF.backgroundColor = .white
         devorQalinligiTF.borderStyle = .roundedRect
+        devorQalinligiTF.textColor = .black
         
         boshqaButton.backgroundColor = .white
         boshqaButton.layer.cornerRadius = 5
+        boshqaButton.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+        boshqaButton.tintColor = .lightGray
+        boshqaButton.addTarget(self, action: #selector(boshqaButtonTap), for: .touchUpInside)
         
         boshqaLabel.text = "Boshqa"
         boshqaLabel.textColor = .label
@@ -95,6 +111,7 @@ class PolatQuvurGazCell: UITableViewCell {
         loyihaningIchkiDiametriTF.layer.cornerRadius = 5
         loyihaningIchkiDiametriTF.backgroundColor = .systemGray4
         loyihaningIchkiDiametriTF.borderStyle = .roundedRect
+        loyihaningIchkiDiametriTF.textColor = .black
         
         tizimTanlash.text = "Tizimni tanlang"
         tizimTanlash.textColor = .label
@@ -104,11 +121,19 @@ class PolatQuvurGazCell: UITableViewCell {
         issiqSuvButton.setTitleColor(.systemBlue, for: .normal)
         issiqSuvButton.backgroundColor = .white
         issiqSuvButton.layer.cornerRadius = 5
+        issiqSuvButton.addTarget(self, action: #selector(issiqSuvButtonTap), for: .touchUpInside)
+        
+        issiqSuvTF.placeholder = "Suv harorati C"
+        issiqSuvTF.layer.cornerRadius = 5
+        issiqSuvTF.backgroundColor = .systemGray4
+        issiqSuvTF.borderStyle = .roundedRect
+        issiqSuvTF.textColor = .black
         
         sovuqSuvButton.setTitle("Sovuq suv", for: .normal)
         sovuqSuvButton.setTitleColor(.systemBlue, for: .normal)
         sovuqSuvButton.backgroundColor = .white
         sovuqSuvButton.layer.cornerRadius = 5
+        sovuqSuvButton.addTarget(self, action: #selector(sovuqSuvButtonTap), for: .touchUpInside)
         
         qSarf.text = "Q sarfni tanlang"
         qSarf.textColor = .label
@@ -118,11 +143,13 @@ class PolatQuvurGazCell: UITableViewCell {
         lSekund.setTitleColor(.systemBlue, for: .normal)
         lSekund.backgroundColor = .white
         lSekund.layer.cornerRadius = 5
+        lSekund.addTarget(self, action: #selector(lSekundTap), for: .touchUpInside)
         
         mKub.setTitle("m kub/soat", for: .normal)
         mKub.setTitleColor(.systemBlue, for: .normal)
         mKub.backgroundColor = .white
         mKub.layer.cornerRadius = 5
+        mKub.addTarget(self, action: #selector(mKubTap), for: .touchUpInside)
         
         kesimUzunligi.text = "Kesim uzunligi, m"
         kesimUzunligi.font = UIFont.systemFont(ofSize: 17)
@@ -132,19 +159,7 @@ class PolatQuvurGazCell: UITableViewCell {
         kesimUzunligiTF.layer.cornerRadius = 5
         kesimUzunligiTF.backgroundColor = .white
         kesimUzunligiTF.borderStyle = .roundedRect
-        
-        mahalliyQarshiliklarButton.backgroundColor = .white
-        mahalliyQarshiliklarButton.layer.cornerRadius = 5
-        
-        mahalliyQarshiliklarLabel.text = "Mahalliy qarshilik tufayli yo'qotishlarni hisobga olish"
-        mahalliyQarshiliklarLabel.textColor = .label
-        mahalliyQarshiliklarLabel.font = UIFont.systemFont(ofSize: 17)
-        mahalliyQarshiliklarLabel.numberOfLines = 2
-        
-        qarshiliklarTF.placeholder = "Qarshiliklar"
-        qarshiliklarTF.layer.cornerRadius = 5
-        qarshiliklarTF.backgroundColor = .white
-        qarshiliklarTF.borderStyle = .roundedRect
+        kesimUzunligiTF.textColor = .black
         
         natijaLabel.font = UIFont.systemFont(ofSize: 17)
         natijaLabel.textColor = .black
@@ -157,7 +172,7 @@ class PolatQuvurGazCell: UITableViewCell {
     
     func layout() {
         
-        contentView.addSubviews(yangiQuvurButton, eskiQuvurButton, quvurTuri, tashqiDiametriLabel, tashqiDiametrTF, devorQalinligi, devorQalinligiTF, loyihaningIchkiDiametriLabel, loyihaningIchkiDiametriTF, boshqaButton, boshqaLabel, tizimTanlash, sovuqSuvButton, issiqSuvButton, qSarf, lSekund, mKub, kesimUzunligi, kesimUzunligiTF, mahalliyQarshiliklarButton, mahalliyQarshiliklarLabel, qarshiliklarTF, natijaLabel, hisoblashButton)
+        contentView.addSubviews(yangiQuvurButton, eskiQuvurButton, quvurTuri, tashqiDiametriLabel, tashqiDiametrTF, devorQalinligi, devorQalinligiTF, loyihaningIchkiDiametriLabel, loyihaningIchkiDiametriTF, boshqaButton, boshqaLabel, tizimTanlash, sovuqSuvButton, issiqSuvButton, issiqSuvTF, qSarf, lSekund, mKub, kesimUzunligi, kesimUzunligiTF, natijaLabel, hisoblashButton)
         
         quvurTuri.top(contentView.topAnchor, 15)
         quvurTuri.left(contentView.leftAnchor, 20)
@@ -229,7 +244,12 @@ class PolatQuvurGazCell: UITableViewCell {
         sovuqSuvButton.height(40)
         sovuqSuvButton.right(contentView.rightAnchor, -20)
         
-        qSarf.top(sovuqSuvButton.bottomAnchor, 20)
+        issiqSuvTF.top(issiqSuvButton.bottomAnchor, 10)
+        issiqSuvTF.left(contentView.leftAnchor, 20)
+        issiqSuvTF.right(contentView.rightAnchor, -20)
+        issiqSuvTF.height(40)
+        
+        qSarf.top(issiqSuvTF.bottomAnchor, 20)
         qSarf.left(contentView.leftAnchor, 20)
         qSarf.right(contentView.rightAnchor, -20)
         qSarf.height(20)
@@ -252,23 +272,8 @@ class PolatQuvurGazCell: UITableViewCell {
         kesimUzunligiTF.left(contentView.leftAnchor, 20)
         kesimUzunligiTF.right(contentView.rightAnchor, -20)
         kesimUzunligiTF.height(40)
-        
-        mahalliyQarshiliklarButton.top(kesimUzunligiTF.bottomAnchor, 20)
-        mahalliyQarshiliklarButton.left(contentView.leftAnchor, 20)
-        mahalliyQarshiliklarButton.height(20)
-        mahalliyQarshiliklarButton.width(20)
-        
-        mahalliyQarshiliklarLabel.top(mahalliyQarshiliklarButton.topAnchor, 0)
-        mahalliyQarshiliklarLabel.left(mahalliyQarshiliklarButton.rightAnchor, 10)
-        mahalliyQarshiliklarLabel.right(contentView.rightAnchor, -20)
-        mahalliyQarshiliklarLabel.height(45)
-        
-        qarshiliklarTF.top(mahalliyQarshiliklarLabel.bottomAnchor, 5)
-        qarshiliklarTF.left(contentView.leftAnchor, 20)
-        qarshiliklarTF.right(contentView.rightAnchor, -20)
-        qarshiliklarTF.height(40)
-        
-        natijaLabel.top(qarshiliklarTF.bottomAnchor, 20)
+    
+        natijaLabel.top(kesimUzunligiTF.bottomAnchor, 20)
         natijaLabel.left(contentView.leftAnchor, 20)
         natijaLabel.width(70)
         
@@ -277,6 +282,120 @@ class PolatQuvurGazCell: UITableViewCell {
         hisoblashButton.right(contentView.rightAnchor, -60)
         hisoblashButton.bottom(contentView.bottomAnchor, -30)
         hisoblashButton.height(60)
+    }
+    
+    func setupPikker() {
+        tashqiDiametrPicker.delegate = self
+        tashqiDiametrPicker.dataSource = self
+        devorQalinligiPicker.delegate = self
+        devorQalinligiPicker.dataSource = self
+        gradusPicker.delegate = self
+        gradusPicker.dataSource = self
         
+        let toolBarTashqi = UIToolbar()
+        let doneTashqi = UIBarButtonItem(title: "done", style: .done, target: self, action: #selector(doneTashqiPres))
+        toolBarTashqi.items = [doneTashqi]
+        toolBarTashqi.sizeToFit()
+        let toolBarDevor = UIToolbar()
+        let doneDevor = UIBarButtonItem(title: "done", style: .done, target: self, action: #selector(doneDevorPres))
+        toolBarDevor.items = [doneDevor]
+        toolBarDevor.sizeToFit()
+        let toolBarGradus = UIToolbar()
+        let doneDevorGradus = UIBarButtonItem(title: "done", style: .done, target: self, action: #selector(doneGradusPres))
+        toolBarGradus.items = [doneDevorGradus]
+        toolBarGradus.sizeToFit()
+        
+        tashqiDiametrTF.inputView = tashqiDiametrPicker
+        tashqiDiametrTF.inputAccessoryView = toolBarTashqi
+        devorQalinligiTF.inputView = devorQalinligiPicker
+        devorQalinligiTF.inputAccessoryView = toolBarDevor
+        issiqSuvTF.inputView = gradusPicker
+        issiqSuvTF.inputAccessoryView = toolBarGradus
+    }
+    
+    @objc func doneTashqiPres() {
+        let row = tashqiDiametrPicker.selectedRow(inComponent: 0)
+        tashqiDiametrTF.text = tashqiDiametr[row]
+        tashqiDiametrTF.resignFirstResponder()
+    }
+    
+    @objc func doneDevorPres() {
+        let row = devorQalinligiPicker.selectedRow(inComponent: 0)
+        devorQalinligiTF.text = devorNol[row]
+        devorQalinligiTF.resignFirstResponder()
+    }
+    
+    @objc func doneGradusPres() {
+        let row = devorQalinligiPicker.selectedRow(inComponent: 0)
+        devorQalinligiTF.text = devorNol[row]
+        devorQalinligiTF.resignFirstResponder()
+    }
+}
+
+extension PolatQuvurGazCell {
+    
+    @objc func yangiQuvurButtonTap() {
+        yangiQuvurButton.setTitleColor(.white, for: .normal)
+        yangiQuvurButton.backgroundColor = .systemBlue
+        eskiQuvurButton.setTitleColor(.systemBlue, for: .normal)
+        eskiQuvurButton.backgroundColor = .white
+    }
+    
+    @objc func eskiQuvurButtonTap() {
+        eskiQuvurButton.setTitleColor(.white, for: .normal)
+        eskiQuvurButton.backgroundColor = .systemBlue
+        yangiQuvurButton.setTitleColor(.systemBlue, for: .normal)
+        yangiQuvurButton.backgroundColor = .white
+    }
+    
+    @objc func issiqSuvButtonTap() {
+        issiqSuvButton.setTitleColor(.white, for: .normal)
+        issiqSuvButton.backgroundColor = .systemBlue
+        sovuqSuvButton.setTitleColor(.systemBlue, for: .normal)
+        sovuqSuvButton.backgroundColor = .white
+        issiqSuvTF.backgroundColor = .white
+    }
+    
+    @objc func sovuqSuvButtonTap() {
+        sovuqSuvButton.setTitleColor(.white, for: .normal)
+        sovuqSuvButton.backgroundColor = .systemBlue
+        issiqSuvButton.setTitleColor(.systemBlue, for: .normal)
+        issiqSuvButton.backgroundColor = .white
+        issiqSuvTF.backgroundColor = .systemGray4
+    }
+    
+    @objc func boshqaButtonTap() {
+        if loyihaningIchkiDiametriLabel.textColor == UIColor.lightGray || loyihaningIchkiDiametriTF.backgroundColor == .systemGray4 {
+            
+            boshqaButton.tintColor = .systemBlue
+            loyihaningIchkiDiametriLabel.textColor = UIColor.label
+            loyihaningIchkiDiametriTF.backgroundColor = UIColor.white
+            tashqiDiametriLabel.isHidden = true
+            tashqiDiametrTF.isHidden = true
+            devorQalinligi.isHidden = true
+            devorQalinligiTF.isHidden = true
+        } else {
+            boshqaButton.tintColor = .lightGray
+            loyihaningIchkiDiametriLabel.textColor = UIColor.lightGray
+            loyihaningIchkiDiametriTF.backgroundColor = UIColor.systemGray4
+            tashqiDiametriLabel.isHidden = false
+            tashqiDiametrTF.isHidden = false
+            devorQalinligi.isHidden = false
+            devorQalinligiTF.isHidden = false
+        }
+    }
+    
+    @objc func lSekundTap() {
+        lSekund.setTitleColor(.white, for: .normal)
+        lSekund.backgroundColor = .systemBlue
+        mKub.setTitleColor(.systemBlue, for: .normal)
+        mKub.backgroundColor = .white
+    }
+    
+    @objc func mKubTap() {
+        mKub.setTitleColor(.white, for: .normal)
+        mKub.backgroundColor = .systemBlue
+        lSekund.setTitleColor(.systemBlue, for: .normal)
+        lSekund.backgroundColor = .white
     }
 }
