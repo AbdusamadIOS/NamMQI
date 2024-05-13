@@ -9,21 +9,70 @@ import UIKit
 
 class IssitishTizimlariGHVC: UIViewController {
 
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .systemGray6
+        style()
+        layout()
+        setupNavBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupNavBar() {
+        
+        navigationItem.title = "Gidravlik hisob"
+        let navigationBarAppearance = UINavigationBarAppearance()
+        
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                                       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .bold) ]
+        navigationBarAppearance.configureWithDefaultBackground()
+        navigationBarAppearance.backgroundColor = .white
+        navigationItem.standardAppearance = navigationBarAppearance
+        navigationItem.compactAppearance = navigationBarAppearance
+        navigationItem.scrollEdgeAppearance = navigationBarAppearance
+        
+        let formula = UIBarButtonItem(image: UIImage(systemName: "questionmark.circle"), style: .plain, target: self, action: #selector(formulaTap))
+        
+        navigationItem.rightBarButtonItem = formula
+        formula.tintColor = .black
     }
-    */
-
+    
+    @objc func formulaTap() {
+        let vc = IsitishTizimlariGidravlikFormula()
+        if let bottomSheet =  vc.sheetPresentationController {
+            bottomSheet.detents = [.medium(), .large()]
+        }
+        self.navigationController?.present(vc, animated: true)
+    }
+    
+    func style() {
+        tableView.backgroundColor = .systemGray6
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
+        tableView.register(QuvurlarCells.self, forCellReuseIdentifier: QuvurlarCells.identifeir)
+    }
+    func layout() {
+        view.addSubviews(tableView)
+        
+        tableView.top(view.topAnchor, 0)
+        tableView.bottom(view.bottomAnchor, 0)
+        tableView.left(view.leftAnchor, 0)
+        tableView.right(view.rightAnchor, 0)
+    }
 }
+
+extension IssitishTizimlariGHVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: QuvurlarCells.identifeir, for: indexPath) as? QuvurlarCells else { return UITableViewCell() }
+        
+        return cell
+    }
+}
+
