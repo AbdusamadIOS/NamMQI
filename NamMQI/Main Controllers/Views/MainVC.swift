@@ -15,17 +15,8 @@ class MainVC: UIViewController {
     var collection: UICollectionView!
     let tableView = UITableView()
     
-    var categories: [Category] = [Category(image: UIImage(named: "gaz"), title: "Po'lat quvurlar (Gaz)"),
-                                  Category(image: UIImage(named: "polat"), title: "Po'lat quvurlar"),
-                                  Category(image: UIImage(named: "chugun"), title: "Chugun quvurlar"),
-                                  Category(image: UIImage(named: "asbest"), title: "Asbest - sement quvurlar"),
-                                  Category(image: UIImage(named: "plastik"), title: "Plastik quvurlar"),
-                                  Category(image: UIImage(named: "beton" ), title: "Temir - beton quvurlar"),
-                                  Category(image: UIImage(named: "shishaplastik"), title: "Shisha - plastmassa quvurlar"),
-                                  Category(image: UIImage(named: "shisha"), title: "Shisha quvurlar"),
-                                  Category(image: UIImage(named: "mis"), title: "Mis quvurlar"),
-                                  Category(image: UIImage(named: "politelin"), title: "Politetilen quvurlar"),
-                                  Category(image: UIImage(named: "metalPolimer"), title: "Metal - polimer quvurlar")
+    var categories: [Category] = [Category(image: UIImage(named: "isitish"), title: "Isitish tizimlarini gidravlik hisobi"),
+                                  Category(image: UIImage(named: "quvur"), title: "Quvurlarda bosimni hisoblash")
     ]
     
     var sideMenues: [SideMenu] = [
@@ -237,49 +228,11 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         
         switch indexPath.item {
         case 0:
-            let vc = PolatQuvurGazVC()
-            vc.categories = categories[indexPath.item]
+            let vc = IssitishTizimlariGHVC()
             navigationController?.pushViewController(vc, animated: true)
-        case 1:
-            let vc1 = PolatQuvurVC()
-            vc1.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc1, animated: true)
-        case 2:
-            let vc2 = ChugunQuvurVC()
-            vc2.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc2, animated: true)
-        case 3:
-            let vc3 = AsbestSementQuvurVC()
-            vc3.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc3, animated: true)
-        case 4:
-            let vc4 = PlastikQuvurVC()
-            vc4.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc4, animated: true)
-        case 5:
-            let vc5 = TemirBetonQuvurVC()
-            vc5.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc5, animated: true)
-        case 6:
-            let vc6 = ShishaPlastmassaVC()
-            vc6.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc6, animated: true)
-        case 7:
-            let vc7 = ShishaQuvurVC()
-            vc7.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc7, animated: true)
-        case 8:
-            let vc8 = MisQuvurVC()
-            vc8.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc8, animated: true)
-        case 9:
-            let vc9 = PolitetilenQuvurVC()
-            vc9.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc9, animated: true)
         default:
-            let vc10 = MetalPolimerQuvurVC()
-            vc10.categories = categories[indexPath.item]
-            navigationController?.pushViewController(vc10, animated: true)
+            let vc2 = QuvurlarVC()
+            navigationController?.pushViewController(vc2, animated: true)
         }
     }
     
