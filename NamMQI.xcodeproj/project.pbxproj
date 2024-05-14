@@ -16,12 +16,20 @@
 		EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E590F2B29FED20051DA49 /* MainVC.swift */; };
 		EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E59172B2A0E170051DA49 /* CategoryDM.swift */; };
 		EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */; };
-		EECCA1002BF21F0100F56BA2 /* QuvurlarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCA0FF2BF21F0100F56BA2 /* QuvurlarVC.swift */; };
+		EECCA1002BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCA0FF2BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift */; };
 		EECCA1022BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCA1012BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift */; };
-		EECCA1062BF296AF00F56BA2 /* IsitishTizimlariGidravlikFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCA1052BF296AF00F56BA2 /* IsitishTizimlariGidravlikFormula.swift */; };
+		EECCA1062BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCA1052BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift */; };
 		EED1205A2BCD6E5D00183436 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED120592BCD6E5D00183436 /* SideMenuCell.swift */; };
 		EED1205E2BCD7FCE00183436 /* MainVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1205D2BCD7FCE00183436 /* MainVCCell.swift */; };
-		EED323E92BD132EE00887731 /* QuvurlarCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E82BD132EE00887731 /* QuvurlarCells.swift */; };
+		EED323E92BD132EE00887731 /* IssitishTGHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED323E82BD132EE00887731 /* IssitishTGHCell.swift */; };
+		EEDB2FDD2BF350F10043168C /* IsitishTizimlariVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FDC2BF350F10043168C /* IsitishTizimlariVC.swift */; };
+		EEDB2FDF2BF351E90043168C /* IsitishTizimlariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FDE2BF351E90043168C /* IsitishTizimlariCell.swift */; };
+		EEDB2FE52BF36B5F0043168C /* YoritishJihozlaridanAIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FE42BF36B5F0043168C /* YoritishJihozlaridanAIVC.swift */; };
+		EEDB2FE72BF36B730043168C /* YoritishJihozlaridanAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FE62BF36B730043168C /* YoritishJihozlaridanAICell.swift */; };
+		EEDB2FE92BF36BB60043168C /* PechlardanVaBoshqaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FE82BF36BB60043168C /* PechlardanVaBoshqaVC.swift */; };
+		EEDB2FEB2BF36BC80043168C /* PechlardanVaBoshqaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FEA2BF36BC80043168C /* PechlardanVaBoshqaCell.swift */; };
+		EEDB2FED2BF37F720043168C /* YoritishJihozBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FEC2BF37F720043168C /* YoritishJihozBottomSheet.swift */; };
+		EEDB2FEF2BF37F880043168C /* PechVaBoshqaBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB2FEE2BF37F880043168C /* PechVaBoshqaBottomSheet.swift */; };
 		EEDF92FB2BCEBD4800EFD305 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF92FA2BCEBD4800EFD305 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +47,20 @@
 		EE1E590F2B29FED20051DA49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		EE1E59172B2A0E170051DA49 /* CategoryDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDM.swift; sourceTree = "<group>"; };
 		EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDM.swift; sourceTree = "<group>"; };
-		EECCA0FF2BF21F0100F56BA2 /* QuvurlarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuvurlarVC.swift; sourceTree = "<group>"; };
+		EECCA0FF2BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentilyatsiyaTizimlariVC.swift; sourceTree = "<group>"; };
 		EECCA1012BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssitishTizimlariGHVC.swift; sourceTree = "<group>"; };
-		EECCA1052BF296AF00F56BA2 /* IsitishTizimlariGidravlikFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsitishTizimlariGidravlikFormula.swift; sourceTree = "<group>"; };
+		EECCA1052BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssitishTGHBottomSheet.swift; sourceTree = "<group>"; };
 		EED120592BCD6E5D00183436 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		EED1205D2BCD7FCE00183436 /* MainVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCell.swift; sourceTree = "<group>"; };
-		EED323E82BD132EE00887731 /* QuvurlarCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuvurlarCells.swift; sourceTree = "<group>"; };
+		EED323E82BD132EE00887731 /* IssitishTGHCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssitishTGHCell.swift; sourceTree = "<group>"; };
+		EEDB2FDC2BF350F10043168C /* IsitishTizimlariVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsitishTizimlariVC.swift; sourceTree = "<group>"; };
+		EEDB2FDE2BF351E90043168C /* IsitishTizimlariCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsitishTizimlariCell.swift; sourceTree = "<group>"; };
+		EEDB2FE42BF36B5F0043168C /* YoritishJihozlaridanAIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoritishJihozlaridanAIVC.swift; sourceTree = "<group>"; };
+		EEDB2FE62BF36B730043168C /* YoritishJihozlaridanAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoritishJihozlaridanAICell.swift; sourceTree = "<group>"; };
+		EEDB2FE82BF36BB60043168C /* PechlardanVaBoshqaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PechlardanVaBoshqaVC.swift; sourceTree = "<group>"; };
+		EEDB2FEA2BF36BC80043168C /* PechlardanVaBoshqaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PechlardanVaBoshqaCell.swift; sourceTree = "<group>"; };
+		EEDB2FEC2BF37F720043168C /* YoritishJihozBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoritishJihozBottomSheet.swift; sourceTree = "<group>"; };
+		EEDB2FEE2BF37F880043168C /* PechVaBoshqaBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PechVaBoshqaBottomSheet.swift; sourceTree = "<group>"; };
 		EEDF92FA2BCEBD4800EFD305 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +116,6 @@
 			children = (
 				EEE301A92B2DF99D00BA9042 /* Setting Folder */,
 				EEE301AA2B2DF9F400BA9042 /* Main Controllers */,
-				EEE301AD2B2DFA9200BA9042 /* Cell file */,
 				EEE301AE2B2DFAC000BA9042 /* Data Model File */,
 				EE1E58F52B29EF530051DA49 /* NamMQI.xcdatamodeld */,
 				EE1E58FD2B29EF550051DA49 /* Info.plist */,
@@ -116,20 +131,72 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
-		EED323F12BD1335300887731 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				EED323E82BD132EE00887731 /* QuvurlarCells.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		EED323F22BD1339800887731 /* WelcomVC */ = {
 			isa = PBXGroup;
 			children = (
 				EE1E59032B29EFA50051DA49 /* WelcomeVC.swift */,
 			);
 			name = WelcomVC;
+			sourceTree = "<group>";
+		};
+		EEDB2FF02BF381860043168C /* Bo'limlar */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E590F2B29FED20051DA49 /* MainVC.swift */,
+				EED1205D2BCD7FCE00183436 /* MainVCCell.swift */,
+				EED120592BCD6E5D00183436 /* SideMenuCell.swift */,
+			);
+			path = "Bo'limlar";
+			sourceTree = "<group>";
+		};
+		EEDB2FF12BF3819D0043168C /* IsitishTizimlari */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB2FDC2BF350F10043168C /* IsitishTizimlariVC.swift */,
+				EEDB2FF52BF382330043168C /* GidravlikHisob */,
+			);
+			path = IsitishTizimlari;
+			sourceTree = "<group>";
+		};
+		EEDB2FF22BF381B20043168C /* VentilyatsiyaTizimlari */ = {
+			isa = PBXGroup;
+			children = (
+				EECCA0FF2BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift */,
+				EEDB2FF32BF381D00043168C /* YoritishJihozlari */,
+				EEDB2FF42BF381F20043168C /* Pechlardan */,
+			);
+			path = VentilyatsiyaTizimlari;
+			sourceTree = "<group>";
+		};
+		EEDB2FF32BF381D00043168C /* YoritishJihozlari */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB2FE42BF36B5F0043168C /* YoritishJihozlaridanAIVC.swift */,
+				EEDB2FEC2BF37F720043168C /* YoritishJihozBottomSheet.swift */,
+				EEDB2FE62BF36B730043168C /* YoritishJihozlaridanAICell.swift */,
+			);
+			path = YoritishJihozlari;
+			sourceTree = "<group>";
+		};
+		EEDB2FF42BF381F20043168C /* Pechlardan */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB2FE82BF36BB60043168C /* PechlardanVaBoshqaVC.swift */,
+				EEDB2FEE2BF37F880043168C /* PechVaBoshqaBottomSheet.swift */,
+				EEDB2FEA2BF36BC80043168C /* PechlardanVaBoshqaCell.swift */,
+			);
+			path = Pechlardan;
+			sourceTree = "<group>";
+		};
+		EEDB2FF52BF382330043168C /* GidravlikHisob */ = {
+			isa = PBXGroup;
+			children = (
+				EECCA1012BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift */,
+				EECCA1052BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift */,
+				EEDB2FDE2BF351E90043168C /* IsitishTizimlariCell.swift */,
+				EED323E82BD132EE00887731 /* IssitishTGHCell.swift */,
+			);
+			path = GidravlikHisob;
 			sourceTree = "<group>";
 		};
 		EEE301A92B2DF99D00BA9042 /* Setting Folder */ = {
@@ -146,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				EED323F02BD1333A00887731 /* Extension */,
-				EED323F12BD1335300887731 /* Cells */,
 				EED323F22BD1339800887731 /* WelcomVC */,
 				EEE301AB2B2DFA2900BA9042 /* Views */,
 			);
@@ -156,21 +222,11 @@
 		EEE301AB2B2DFA2900BA9042 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E590F2B29FED20051DA49 /* MainVC.swift */,
-				EECCA0FF2BF21F0100F56BA2 /* QuvurlarVC.swift */,
-				EECCA1012BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift */,
-				EECCA1052BF296AF00F56BA2 /* IsitishTizimlariGidravlikFormula.swift */,
+				EEDB2FF02BF381860043168C /* Bo'limlar */,
+				EEDB2FF12BF3819D0043168C /* IsitishTizimlari */,
+				EEDB2FF22BF381B20043168C /* VentilyatsiyaTizimlari */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		EEE301AD2B2DFA9200BA9042 /* Cell file */ = {
-			isa = PBXGroup;
-			children = (
-				EED120592BCD6E5D00183436 /* SideMenuCell.swift */,
-				EED1205D2BCD7FCE00183436 /* MainVCCell.swift */,
-			);
-			path = "Cell file";
 			sourceTree = "<group>";
 		};
 		EEE301AE2B2DFAC000BA9042 /* Data Model File */ = {
@@ -300,14 +356,22 @@
 				EE1E59052B29EFA50051DA49 /* WelcomeVC.swift in Sources */,
 				EED1205E2BCD7FCE00183436 /* MainVCCell.swift in Sources */,
 				EED1205A2BCD6E5D00183436 /* SideMenuCell.swift in Sources */,
-				EED323E92BD132EE00887731 /* QuvurlarCells.swift in Sources */,
+				EEDB2FDF2BF351E90043168C /* IsitishTizimlariCell.swift in Sources */,
+				EED323E92BD132EE00887731 /* IssitishTGHCell.swift in Sources */,
 				EE1E59182B2A0E170051DA49 /* CategoryDM.swift in Sources */,
+				EEDB2FE52BF36B5F0043168C /* YoritishJihozlaridanAIVC.swift in Sources */,
 				EECCA1022BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift in Sources */,
 				EE1E59112B29FED20051DA49 /* MainVC.swift in Sources */,
-				EECCA1062BF296AF00F56BA2 /* IsitishTizimlariGidravlikFormula.swift in Sources */,
+				EEDB2FED2BF37F720043168C /* YoritishJihozBottomSheet.swift in Sources */,
+				EECCA1062BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift in Sources */,
+				EEDB2FE92BF36BB60043168C /* PechlardanVaBoshqaVC.swift in Sources */,
 				EE1E58ED2B29EF530051DA49 /* AppDelegate.swift in Sources */,
 				EE1E58F72B29EF530051DA49 /* NamMQI.xcdatamodeld in Sources */,
-				EECCA1002BF21F0100F56BA2 /* QuvurlarVC.swift in Sources */,
+				EEDB2FEF2BF37F880043168C /* PechVaBoshqaBottomSheet.swift in Sources */,
+				EEDB2FEB2BF36BC80043168C /* PechlardanVaBoshqaCell.swift in Sources */,
+				EECCA1002BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift in Sources */,
+				EEDB2FE72BF36B730043168C /* YoritishJihozlaridanAICell.swift in Sources */,
+				EEDB2FDD2BF350F10043168C /* IsitishTizimlariVC.swift in Sources */,
 				EEA4FCA92B33303700C3ABD3 /* SideMenuDM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,13 +515,14 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = NamMaster;
+				INFOPLIST_KEY_CFBundleDisplayName = Formasters;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,13 +547,14 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = NamMaster;
+				INFOPLIST_KEY_CFBundleDisplayName = Formasters;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
