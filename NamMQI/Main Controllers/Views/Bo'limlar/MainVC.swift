@@ -238,6 +238,6 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: (collectionView.frame.width - 45) / 2, height: 170)
+        return CGSize(width: (collectionView.frame.width - 45) / 2, height: (collectionView.frame.height - 45) / 3.5)
     }
 }

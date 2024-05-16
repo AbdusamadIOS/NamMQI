@@ -53,12 +53,13 @@ class MainVCCell: UICollectionViewCell {
             img.topAnchor.constraint(equalTo: conteneirView.topAnchor, constant: 10),
             img.leftAnchor.constraint(equalTo: conteneirView.leftAnchor, constant: 10),
             img.rightAnchor.constraint(equalTo: conteneirView.rightAnchor, constant: -10),
-            img.heightAnchor.constraint(equalToConstant: 100),
+            img.bottomAnchor.constraint(equalTo: conteneirView.bottomAnchor, constant: -60),
             
             title.topAnchor.constraint(equalTo: img.bottomAnchor, constant: 10),
             title.rightAnchor.constraint(equalTo: conteneirView.rightAnchor, constant: -5),
             title.leftAnchor.constraint(equalTo: conteneirView.leftAnchor, constant: 5),
-            title.bottomAnchor.constraint(equalTo: conteneirView.bottomAnchor, constant: -10)
+            title.bottomAnchor.constraint(equalTo: conteneirView.bottomAnchor, constant: -10),
+            title.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     

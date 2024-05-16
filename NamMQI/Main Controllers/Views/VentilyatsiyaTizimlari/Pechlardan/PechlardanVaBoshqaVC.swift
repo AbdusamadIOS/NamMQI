@@ -44,7 +44,7 @@ class PechlardanVaBoshqaVC: UIViewController {
         if let bottomSheet =  vc.sheetPresentationController {
             bottomSheet.detents = [.medium(), .large()]
         }
-        self.navigationController?.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func style() {

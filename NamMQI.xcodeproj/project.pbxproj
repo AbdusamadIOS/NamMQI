@@ -47,6 +47,7 @@
 		EE1E590F2B29FED20051DA49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		EE1E59172B2A0E170051DA49 /* CategoryDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDM.swift; sourceTree = "<group>"; };
 		EEA4FCA82B33303700C3ABD3 /* SideMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDM.swift; sourceTree = "<group>"; };
+		EECA00B02BF6512300EC7D7E /* NamMQI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamMQI.entitlements; sourceTree = "<group>"; };
 		EECCA0FF2BF21F0100F56BA2 /* VentilyatsiyaTizimlariVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentilyatsiyaTizimlariVC.swift; sourceTree = "<group>"; };
 		EECCA1012BF2209F00F56BA2 /* IssitishTizimlariGHVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssitishTizimlariGHVC.swift; sourceTree = "<group>"; };
 		EECCA1052BF296AF00F56BA2 /* IssitishTGHBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssitishTGHBottomSheet.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		EE1E58EB2B29EF530051DA49 /* NamMQI */ = {
 			isa = PBXGroup;
 			children = (
+				EECA00B02BF6512300EC7D7E /* NamMQI.entitlements */,
 				EEE301A92B2DF99D00BA9042 /* Setting Folder */,
 				EEE301AA2B2DF9F400BA9042 /* Main Controllers */,
 				EEE301AE2B2DFAC000BA9042 /* Data Model File */,
@@ -510,9 +512,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NamMQI/NamMQI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2B3232GK74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Formasters;
@@ -530,9 +533,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mr.Adam.NamMQI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 			};
 			name = Debug;
 		};
@@ -542,9 +547,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NamMQI/NamMQI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2B3232GK74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NamMQI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Formasters;
@@ -562,9 +568,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mr.Adam.NamMQI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 			};
 			name = Release;
 		};
